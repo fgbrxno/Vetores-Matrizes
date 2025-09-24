@@ -16,6 +16,19 @@ public class BatalhaNaval {
                 mar[i][j] = '~';
                 }
             }
+
+        boolean[][] navios = new boolean[7][7];
+        int naviosRestantes = 3;
+
+        for (int i = 0; i < 3; i++) {
+            int linha, coluna;
+            do {
+                linha = random.nextInt(7);
+                coluna = random.nextInt(7);
+            } while (navios[linha][coluna]);
+            navios[linha][coluna] = true;
         }
+
     }
+}
 
