@@ -29,6 +29,12 @@ public class BatalhaNaval {
             navios[linha][coluna] = true;
         }
 
+        System.out.println("Batalha Naval:");
+        while (naviosRestantes > 0) {
+            System.out.println("Digite linha (0-6) e coluna (0-6):");
+            int l = sc.nextInt();
+            int c = sc.nextInt();
+        }
     }
 }
 
